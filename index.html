@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>assignment-05</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5.0.0-beta.9/daisyui.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="">
+    <header class="mx-30 ">
+        <nav class="bg-white flex justify-between rounded-lg ">
+            <div class="flex ml-6">
+                <img class="w-[51px] h-[51px]" src="assets/logo.png" alt="">
+                <h1 class="ml-1 mt-4 text-2xl">Dev<span class="font-bold">Board</span></h1>
+            </div>
+            <div class="flex justify-around items-center gap-3 mr-6">
+                <input  type="checkbox">
+                <h1 class="font-bold">20</h1>
+                <div class="ml-9">
+                    <button id="color-Btn" class="btn bg-white"><img src="assets/theme-btn.png" alt=""></button>
+                </div>
+            </div>
+        </nav>
+        <section class="grid grid-cols-4 w-9/12 gap-2 mt-6">
+            <div class="bg-white flex gap-3 items-center justify-center border rounded-lg h-auto">
+                <input type="checkbox">
+                <div>
+                    <p>Task Assigned</p>
+                    <h1 id="input-value" class="font-bold">6</h1>
+                </div>
+            </div>
+            <div class="col-span-2 bg-gradient-to-r from-blue-700 to-white-100 border rounded-lg ">
+                <div class="flex justify-between justify-center items-center gap-10  h-auto ">
+                    <img src="assets/board.png" alt="">
+                    <p>Discover Something <br>New Today!</p>
+                </div>
+            </div>
+            <div class="flex justify-between justify-center items-center gap-6 border rounded-lg">
+                <img class="w-[30px] h-[30px] ml-2" src="assets/calender.png" alt="">
+                <div>
+                    <p>Wed ,</p>
+                    
+                    <h1>Jul 28 2025</h1>
+                </div>
+            </div>
+        </section>
+        <section class="w-[260px] min-h-screen border float-right -mt-20 pl-4 rounded-xl">
+            <div class="flex justify gap-4 justify-center mt-6">
+                <img src="assets/activity.png" alt="">
+                <h1 class="font-bold text-xl">Activity Log</h1>
+            </div>
+            <button class="btn border px-4 rounded-lg bg-blue-600 text-white font-bold mt-4 ml-14">Clear History</button>
+        </section>
+    </header>
+    <main>
+        <div class="grid grid-cols-3 gap-2 mx-30 w-[840px] mt-4">
+            <div class="border rounded-lg">
+                <p class="ml-4">ShopEasy</p>
+                <h1 class="font-bold text-lg ml-2">Fix Mobile Button Issue</h1>
+                <p class="text-center">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly and ensure onClick works properly</p>
+                <div class="flex items-center justify-between border border-gray-400 border-dashed">
+                    <div class="ml-2">
+                        <p>Deadline</p>
+                        <h1 class="font-bold">21 March 2025</h1>
+    
+                    </div>
+                    <div class="mr-2 mt-1">
+                        <button  id="first-btn" class="btn border px-4 bg-blue-600 text-white font-bold rounded-xl py-2">Completed</button>
+                    </div>
+                </div>
+            </div>
+            <div class="border rounded-lg">
+                <p class="ml-4">CloudSync</p>
+                <h1 class="font-bold text-lg ml-2">Add Dark Mode</h1>
+                <p class="text-center">Store the user's preference in localStorage, update CSS variables dynamically, and apply a smooth transition effect.</p>
+                <div class="flex items-center justify-between border border-gray-400 border-dashed">
+                    <div class="ml-2">
+                        <p>Deadline</p>
+                        <h1 class="font-bold">21 March 2025</h1>
+    
+                    </div>
+                    <div class="mr-2 mt-1">
+                        <button id="btn-2" class=" btn border px-4 bg-blue-600 text-white font-bold rounded-xl py-2">Completed</button>
+                    </div>
+                </div>
+            </div>
+            <div class="border rounded-lg">
+                <p class="ml-4">SwiftPay</p>
+                <h1 class="font-bold text-lg ml-2">Optimize Home page </h1>
+                <p class="text-center">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly and ensure onClick works properly</p>
+                <div class="flex items-center justify-between border border-gray-400 border-dashed">
+                    <div class="ml-2">
+                        <p>Deadline</p>
+                        <h1 class="font-bold">21 March 2025</h1>
+    
+                    </div>
+                    <div class="mr-2 mt-1">
+                        <button class="btn border px-4 bg-blue-600 text-white font-bold rounded-xl py-2">Completed</button>
+                    </div>
+                </div>
+            </div>
+            <div class="border rounded-lg">
+                <p class="ml-4">Meta</p>
+                <h1 class="font-bold text-lg ml-2">Add new emoji 🤲</h1>
+                <p class="text-center">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly and ensure onClick works properly</p>
+                <div class="flex items-center justify-between border border-gray-400 border-dashed">
+                    <div class="ml-2">
+                        <p>Deadline</p>
+                        <h1 class="font-bold">21 March 2025</h1>
+    
+                    </div>
+                    <div class="mr-2 mt-1">
+                        <button class="btn border px-4 bg-blue-600 text-white font-bold rounded-xl py-2">Completed</button>
+                    </div>
+                </div>
+            </div>
+            <div class="border rounded-lg">
+                <p class="ml-4">Google LLC</p>
+                <h1 class="font-bold text-lg ml-2">Integrate OpenAI API </h1>
+                <p class="text-center">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly and ensure onClick works properly</p>
+                <div class="flex items-center justify-between border border-gray-400 border-dashed">
+                    <div class="ml-2">
+                        <p>Deadline</p>
+                        <h1 class="font-bold">21 March 2025</h1>
+    
+                    </div>
+                    <div class="mr-2 mt-1">
+                        <button class="btn border px-4 bg-blue-600 text-white font-bold rounded-xl py-2">Completed</button>
+                    </div>
+                </div>
+            </div>
+            <div class="border rounded-lg">
+                <p class="ml-4">Glassdoar</p>
+                <h1 class="font-bold text-lg ml-2">Improve Job searching </h1>
+                <p class="text-center">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly and ensure onClick works properly</p>
+                <div class="flex items-center justify-between border border-gray-400 border-dashed">
+                    <div class="ml-2">
+                        <p>Deadline</p>
+                        <h1 class="font-bold">21 March 2025</h1>
+    
+                    </div>
+                    <div class="mr-2 mt-1">
+                        <button class="btn border px-4 bg-blue-600 text-white font-bold rounded-xl py-2">Completed</button>
+                    </div>
+                </div>
+            </div>
+
+            
+    </main>
+
+    
+    <script src="js/one.js"></script>
+</body>
+</html>
