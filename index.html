@@ -10,7 +10,7 @@
 <body class="">
     <header class="mx-30 ">
         <nav class="bg-white flex justify-between rounded-lg ">
-            <div class="flex ml-6">
+            <div  class="flex ml-6">
                 <img class="w-[51px] h-[51px]" src="assets/logo.png" alt="">
                 <h1 class="ml-1 mt-4 text-2xl">Dev<span class="font-bold">Board</span></h1>
             </div>
@@ -30,13 +30,13 @@
                     <h1 id="input-value" class="font-bold">6</h1>
                 </div>
             </div>
-            <div class="col-span-2 bg-gradient-to-r from-blue-700 to-white-100 border rounded-lg ">
-                <div class="flex justify-between justify-center items-center gap-10  h-auto ">
+            <div class="bg-white col-span-2 bg-gradient-to-r from-blue-700 to-white-100 border rounded-lg ">
+                <div id="two-page" class="flex justify-between justify-center items-center gap-10  h-auto ">
                     <img src="assets/board.png" alt="">
                     <p>Discover Something <br>New Today!</p>
                 </div>
             </div>
-            <div class="flex justify-between justify-center items-center gap-6 border rounded-lg">
+            <div class="bg-white flex justify-between justify-center items-center gap-6 border rounded-lg">
                 <img class="w-[30px] h-[30px] ml-2" src="assets/calender.png" alt="">
                 <div>
                     <p>Wed ,</p>
@@ -45,17 +45,20 @@
                 </div>
             </div>
         </section>
-        <section class="w-[260px] min-h-screen border float-right -mt-20 pl-4 rounded-xl">
+        <section class="bg-white w-[260px] h-svh border float-right -mt-20 pl-4 rounded-xl">
             <div class="flex justify gap-4 justify-center mt-6">
                 <img src="assets/activity.png" alt="">
                 <h1 class="font-bold text-xl">Activity Log</h1>
             </div>
-            <button class="btn border px-4 rounded-lg bg-blue-600 text-white font-bold mt-4 ml-14">Clear History</button>
+            <button id="clearBtn" class="btn border px-4 rounded-lg bg-blue-600 text-white font-bold mt-4 ml-14">Clear History</button>
+
+            <br>
+            <div id="clickedButtons"></div>
         </section>
     </header>
     <main>
-        <div class="grid grid-cols-3 gap-2 mx-30 w-[840px] mt-4">
-            <div class="border rounded-lg">
+        <div class="grid grid-cols-3 gap-2 mx-30 w-[840px] mt-10 gap-y-6">
+            <div class=" rounded-lg bg-white bg-white">
                 <p class="ml-4">ShopEasy</p>
                 <h1 class="font-bold text-lg ml-2">Fix Mobile Button Issue</h1>
                 <p class="text-center">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly and ensure onClick works properly</p>
@@ -70,7 +73,7 @@
                     </div>
                 </div>
             </div>
-            <div class="border rounded-lg">
+            <div class="shadow rounded-lg bg-white">
                 <p class="ml-4">CloudSync</p>
                 <h1 class="font-bold text-lg ml-2">Add Dark Mode</h1>
                 <p class="text-center">Store the user's preference in localStorage, update CSS variables dynamically, and apply a smooth transition effect.</p>
@@ -81,11 +84,11 @@
     
                     </div>
                     <div class="mr-2 mt-1">
-                        <button id="btn-2" class=" btn border px-4 bg-blue-600 text-white font-bold rounded-xl py-2">Completed</button>
+                        <button id="btn2" class=" btn border px-4 bg-blue-600 text-white font-bold rounded-xl py-2">Completed</button>
                     </div>
                 </div>
             </div>
-            <div class="border rounded-lg">
+            <div class="border rounded-lg bg-white">
                 <p class="ml-4">SwiftPay</p>
                 <h1 class="font-bold text-lg ml-2">Optimize Home page </h1>
                 <p class="text-center">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly and ensure onClick works properly</p>
@@ -96,11 +99,11 @@
     
                     </div>
                     <div class="mr-2 mt-1">
-                        <button class="btn border px-4 bg-blue-600 text-white font-bold rounded-xl py-2">Completed</button>
+                        <button id="btn3" class="btn border px-4 bg-blue-600 text-white font-bold rounded-xl py-2">Completed</button>
                     </div>
                 </div>
             </div>
-            <div class="border rounded-lg">
+            <div class="border rounded-lg bg-white">
                 <p class="ml-4">Meta</p>
                 <h1 class="font-bold text-lg ml-2">Add new emoji 🤲</h1>
                 <p class="text-center">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly and ensure onClick works properly</p>
@@ -111,11 +114,11 @@
     
                     </div>
                     <div class="mr-2 mt-1">
-                        <button class="btn border px-4 bg-blue-600 text-white font-bold rounded-xl py-2">Completed</button>
+                        <button id="btn4" class="btn border px-4 bg-blue-600 text-white font-bold rounded-xl py-2">Completed</button>
                     </div>
                 </div>
             </div>
-            <div class="border rounded-lg">
+            <div class="border rounded-lg bg-white">
                 <p class="ml-4">Google LLC</p>
                 <h1 class="font-bold text-lg ml-2">Integrate OpenAI API </h1>
                 <p class="text-center">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly and ensure onClick works properly</p>
@@ -126,11 +129,11 @@
     
                     </div>
                     <div class="mr-2 mt-1">
-                        <button class="btn border px-4 bg-blue-600 text-white font-bold rounded-xl py-2">Completed</button>
+                        <button id="btn5" class="btn border px-4 bg-blue-600 text-white font-bold rounded-xl py-2">Completed</button>
                     </div>
                 </div>
             </div>
-            <div class="border rounded-lg">
+            <div class="border rounded-lg bg-white">
                 <p class="ml-4">Glassdoar</p>
                 <h1 class="font-bold text-lg ml-2">Improve Job searching </h1>
                 <p class="text-center">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly and ensure onClick works properly</p>
@@ -141,15 +144,22 @@
     
                     </div>
                     <div class="mr-2 mt-1">
-                        <button class="btn border px-4 bg-blue-600 text-white font-bold rounded-xl py-2">Completed</button>
+                        <button id="btn6" class="btn border px-4 bg-blue-600 text-white font-bold rounded-xl py-2">Completed</button>
                     </div>
                 </div>
             </div>
 
             
-    </main>
+    </main>    
+    
+
+
 
     
+    
+
+    
+
     <script src="js/one.js"></script>
 </body>
 </html>
