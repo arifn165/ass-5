@@ -14,8 +14,8 @@
                 <img class="w-[51px] h-[51px]" src="assets/logo.png" alt="">
                 <h1 class="ml-1 mt-4 text-2xl">Dev<span class="font-bold">Board</span></h1>
             </div>
-            <div id="first-page" class="navbar-end ">
-              <a  class="btn bg-blue-500 text-white font-bold">Back To Desk</a>
+            <div  class="navbar-end ">
+              <a id="home" class="btn bg-blue-500 text-white font-bold">Back To Desk</a>
             </div>
         </div>
     </nav>
@@ -46,5 +46,10 @@
             <p>Answer No 5 :- JavaScript দিয়ে এলিমেন্ট তৈরি করতে createElement(), যোগ করতে appendChild(), এবং মুছে ফেলতে removeChild() ব্যবহার করা হয়।</p>
         </div>
     </main>
+    <script>
+        document.getElementById('home').addEventListener('click', function(){
+            window.location.href='index.html'
+        })
+    </script>
 </body>
 </html>

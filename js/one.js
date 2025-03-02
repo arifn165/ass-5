@@ -49,16 +49,7 @@ let clickedButtons = new Set();
         document.getElementById("btn6").addEventListener("click", function() { buttonClicked("btn6", "You have Complete The Task Improve Job searching at 4:17:20 AM"); });
 
         // clear button
-        const clearBtn = document.getElementById('clearBtn').addEventListener('click', function() {
-            
-            localStorage.clear();
-            sessionStorage.clear();
 
-        });
         document.getElementById('two-page').addEventListener('click',function(){
             window.location.href="two.html";
-        })
-        const home = document.getElementById("first-page");
-        home.addEventListener('click',function(){
-            window.location.href="index.html";
         })
